@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+
+.container {
+   width: 100%; 
+}
+
+.navbar {
+    text-align: center;
+}
+
+
+.title {
+ margin-top: 50px;   
+}
+
+.start-button {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+.score {
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+.card-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: fit-content;
+    margin-left: 37%;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.card-front {
+    
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 211, 204);
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+
+
+
+.card-back {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(213, 180, 134);
+    position: absolute;
+    top : 0;
+    z-index: 1;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+
+
+
+.rotated .card-back {
+    transform: rotateY(90deg);
+    transition-delay: 0.2s;
+}
